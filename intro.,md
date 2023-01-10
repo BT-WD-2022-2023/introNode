@@ -1,0 +1,55 @@
+Intro to Node.js exercises
+Note: Comment each exercises as you complete all of them in one file. 
+
+Exercise #1 
+- Open a new VSC Code file
+- Type the following command in a new .js file called test.js
+- Then run the following code in the terminal   console.log(module);
+- Copy the output here along with an explanation of what it represents
+
+
+Exercise #2 
+Directions: Explore the 'path' module of node.js
+Type the code below and add the output
+add a comment where explain the output
+
+//begin code below
+const path = require('path');
+const pathObj1 = path.parse(__filename);
+const pathObj = path.parse(__dirname);
+console.log(pathObj1);
+console.log(pathObj);
+
+//end of code
+
+Exercise #3 -
+//What information does the program output?
+//What is the modue we are using here.
+//Comment on the output and its meaning
+
+const os= require('os');
+console.log(os.freemem());
+
+Exercise #4
+//comment on the output of the program provided below
+
+//begin code below
+/Exercise #4 Comment on the output 
+const os = require('os');
+const free = os.freemem();
+
+const hostname = os.hostname();
+const total = os.totalmem();
+username = os.userInfo();
+console.log('The free memory available ' + free);
+console.log('The total memory available ' + total);
+console.log(hostname);
+console.log(username);
+//end code
+
+Exercise #5
+//Link to Node.js API documentation: https://nodejs.org/dist/latest-v16.x/docs/api/
+//Explore one module or another feature of a module on your own. 
+//Share your mini program.
+//Explain the code and its output.
+
